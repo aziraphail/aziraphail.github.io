@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ntact
+title: Contact
 permalink: /contact/
 ---
 
