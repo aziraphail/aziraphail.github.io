@@ -2,3 +2,21 @@ site_name: My Docs
 site_url: https://aziraphail.github.io/mkdocs
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.sections
+    # - navigation.expand
+    # - navigation.prune # Not compatible with navigation.expand
+    # - navigation.indexes # Not compatible with  toc.integrate
+    - navigation.top
+
+markdown_extensions:
+  - neoteroi.cards
+
+
+extra_css:
+  - stylesheets/neoteroi-mkdocs.css
