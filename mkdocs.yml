@@ -43,5 +43,14 @@ nav:
 markdown_extensions:
   - neoteroi.cards
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/aziraphail
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/suhailmulla
+    # - icon: fontawesome/solid/envelope
+    #   link: mailto:suhailamulla88@gmail.com
+
 extra_css:
   - stylesheets/neoteroi-mkdocs.css
