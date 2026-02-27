@@ -1,5 +1,9 @@
-# Suhail Mulla | Aziraphail
+---
+hide:
+  - navigation
+  - toc
+---
 
-Data Engineer & Analytics professional. This is my personal site where I write about data engineering, share projects, and document my work.
+# Suhail Mulla
 
-More coming soon.
+Data Engineer. Building pipelines, dashboards, and analytics systems. Currently MS Analytics at Georgia Tech.
