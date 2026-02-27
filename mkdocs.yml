@@ -1,5 +1,6 @@
-site_name: My Docs
-site_url: https://aziraphail.github.io/mkdocs
+site_name: Suhail Mulla | Aziraphail
+site_url: https://aziraphail.github.io/
+
 theme:
   name: material
   features:
@@ -14,9 +15,20 @@ theme:
     # - navigation.indexes # Not compatible with  toc.integrate
     - navigation.top
 
+plugins:
+  - search
+  - blog
+
+nav:
+  - Home: index.md
+  - Blog:
+    - blog/index.md
+  - Projects: Projects/index.md
+  - Resume: Resume/Resume.md
+  - Certifications: Certifications/Certifications.md
+
 markdown_extensions:
   - neoteroi.cards
-
 
 extra_css:
   - stylesheets/neoteroi-mkdocs.css
