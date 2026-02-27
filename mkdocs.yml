@@ -38,9 +38,9 @@ nav:
   - Home: index.md
   - Blog:
     - blog/index.md
-  - Projects: Projects/index.md
-  - Resume: Resume/Resume.md
-  - Certifications: Certifications/Certifications.md
+  - Projects: projects/index.md
+  - Resume: resume/index.md
+  - Certifications: certifications/index.md
 
 markdown_extensions:
   - neoteroi.cards
