@@ -3,6 +3,8 @@ site_url: https://aziraphail.github.io/
 
 theme:
   name: material
+  icon:
+    logo: octicons/terminal-16
   palette:
     - scheme: slate
       primary: indigo
