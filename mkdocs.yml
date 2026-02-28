@@ -3,6 +3,7 @@ site_url: https://aziraphail.github.io/
 
 theme:
   name: material
+  favicon: img/favicon.svg
   icon:
     logo: octicons/terminal-16
   palette:
