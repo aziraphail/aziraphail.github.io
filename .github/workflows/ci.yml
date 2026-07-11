@@ -1,4 +1,4 @@
-name: ci
+name: deploy
 on:
   push:
     branches:
@@ -11,16 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - uses: astral-sh/setup-uv@v5
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
+      - name: Deploy static site to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-      - run: uv run mkdocs gh-deploy --force
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+
+# NOTE: The previous workflow built the MkDocs Material site (docs/ + mkdocs.yml; note: mkdocs builds into site/, hence the public/ name).
+# That setup is retained in the repo for a future overhaul but is not deployed.
+# To restore it, replace the deploy step with:
+#   - uses: astral-sh/setup-uv@v5
+#   - run: uv run mkdocs gh-deploy --force
