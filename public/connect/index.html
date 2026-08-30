@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suhail Mulla — Connect</title>
+  <meta name="description" content="Connect with Suhail Mulla, Data Engineer, Data Analyst, and BI Specialist.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --rule: #e5e5e5;
+      --accent: #c9184a;
+      --button-bg: #ffffff;
+      --button-border: #dddddd;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e6e6e6;
+        --muted: #9a9a9a;
+        --rule: #2c2c2c;
+        --accent: #ef476f;
+        --button-bg: #171717;
+        --button-border: #303030;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+    .page {
+      width: min(100% - 3rem, 42rem);
+      margin: 0 auto;
+      padding: 2rem 0 5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-start;
+      font-size: 0.95rem;
+      padding-bottom: 0.5rem;
+    }
+    a {
+      color: var(--text);
+      text-decoration: underline;
+      text-decoration-color: var(--muted);
+      text-underline-offset: 3px;
+    }
+    a:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+    }
+    .hero {
+      text-align: center;
+      padding: 6.25rem 0 3.75rem;
+    }
+    .hero h1 {
+      font-family: "Mr Dafoe", cursive;
+      font-weight: 400;
+      font-size: clamp(3.25rem, 7vw, 4.6rem);
+      color: var(--accent);
+      line-height: 1.08;
+    }
+    .hero .tagline {
+      margin-top: 2rem;
+      font-weight: 600;
+      font-size: 1.15rem;
+      color: var(--accent);
+    }
+    .intro {
+      max-width: 36rem;
+      margin: 1.5rem auto 0;
+      font-size: 1rem;
+    }
+    .connect {
+      max-width: 34rem;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .links {
+      display: grid;
+      gap: 0.8rem;
+    }
+    .link-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 3.6rem;
+      padding: 0.9rem 1.25rem;
+      border: 1px solid var(--button-border);
+      border-radius: 0.55rem;
+      background: var(--button-bg);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .link-button:hover,
+    .link-button:focus-visible {
+      border-color: var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+      outline: none;
+    }
+    @media (max-width: 480px) {
+      .page {
+        width: min(100% - 2rem, 42rem);
+        padding-top: 1.5rem;
+      }
+      .hero {
+        padding: 4.25rem 0 3rem;
+      }
+      .hero .tagline {
+        font-size: 1.05rem;
+      }
+      .intro {
+        font-size: 0.97rem;
+      }
+      .connect {
+        max-width: none;
+      }
+      .link-button {
+        min-height: 3.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+
+    <section class="hero">
+      <h1>Suhail Mulla</h1>
+      <p class="tagline">Data Engineer · Data Analyst · BI Specialist</p>
+      <p class="intro">
+        I build end-to-end data systems, from ingestion and transformation to reliable data models,
+        analytics, and BI, using Python, SQL, and the modern data stack.
+      </p>
+    </section>
+
+    <section class="connect">
+      <h2>Connect</h2>
+      <div class="links">
+        <a class="link-button" href="https://linkedin.com/in/suhailmulla">LinkedIn</a>
+        <a class="link-button" href="https://github.com/aziraphail">GitHub</a>
+        <a class="link-button" href="mailto:suhail@suhailmulla.com">Email</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
