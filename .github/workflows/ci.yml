@@ -17,8 +17,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 
-# NOTE: The previous workflow built the MkDocs Material site (docs/ + mkdocs.yml; note: mkdocs builds into site/, hence the public/ name).
-# That setup is retained in the repo for a future overhaul but is not deployed.
-# To restore it, replace the deploy step with:
-#   - uses: astral-sh/setup-uv@v5
-#   - run: uv run mkdocs gh-deploy --force
+# Static site source lives in public/. MkDocs is no longer part of deployment.
